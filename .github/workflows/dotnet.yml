@@ -8,10 +8,6 @@ on:
 
 jobs:
   build:
-    defaults:
-      run:
-        working-directory: CSharp
-
     runs-on: ubuntu-latest
 
     steps:
