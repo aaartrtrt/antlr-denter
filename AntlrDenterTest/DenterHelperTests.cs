@@ -272,7 +272,7 @@ namespace AntlrDenterTest
                     int type = t.Type;
                     TokenType tokenType = type == -1
                         ? EOF_TOKEN
-                        : (TokenType) type;
+                        : (TokenType)type;
                     types.Add(tokenType);
                 }
 
@@ -291,7 +291,7 @@ namespace AntlrDenterTest
             private ReadOnlyCollection<IToken> Dent(List<IToken> tokens)
             {
                 IEnumerator<IToken> tokenIter = tokens.GetEnumerator();
-                DenterHelper denter = new IterableBasedDenterHelper((int) NL, (int) INDENT, (int) DEDENT, tokenIter);
+                DenterHelper denter = new IterableBasedDenterHelper((int)NL, (int)INDENT, (int)DEDENT, tokenIter);
                 if (_ignoreEof) denter.GetOptions().IgnoreEof();
 
                 var dented = new List<IToken>();
@@ -317,7 +317,7 @@ namespace AntlrDenterTest
 
                 internal void AddToken(string prefix, string s, TokenType tokenType)
                 {
-                    var token = new CommonToken((int) tokenType, prefix + s);
+                    var token = new CommonToken((int)tokenType, prefix + s);
                     token.Column = Pos;
                     token.Line = _lineNo;
                     Pos += s.Length;
