@@ -140,45 +140,6 @@ There is also a builder available, which is especially useful for Java 8:
 
     NL: ('\r'? '\n' ' '*);
 	
-Python3
--------
-
-![Python package](https://github.com/yshavit/antlr-denter/workflows/Python%20package/badge.svg)
-
-Big thanks to [@Bluepuff71](https://github.com/Bluepuff71) for porting this to Python!
-
-```
-pip install antlr-denter
-```
-
-Next, in Antlr put:
-```
-tokens { INDENT, DEDENT }
-
-@lexer::header{
-from antlr_denter.DenterHelper import DenterHelper
-from MyCoolParser import MyCoolParser
-}
-@lexer::members {
-class MyCoolDenter(DenterHelper):
-    def __init__(self, lexer, nl_token, indent_token, dedent_token, ignore_eof):
-        super().__init__(nl_token, indent_token, dedent_token, ignore_eof)
-        self.lexer: MyCoolLexer = lexer
-
-    def pull_token(self):
-        return super(MyCoolLexer, self.lexer).nextToken()
-
-denter = None
-
-def nextToken(self):
-    if not self.denter:
-        self.denter = self.MyCoolDenter(self, self.NL, MyCoolParser.INDENT, MyCoolParser.DEDENT, ***Should Ignore EOF***)
-    return self.denter.next_token()
-
-}
-
-NL: ('\r'? '\n' ' '*); #For tabs just switch out ' '* with '\t'*
-```
 
 CSharp
 ------
