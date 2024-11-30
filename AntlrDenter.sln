@@ -1,8 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# 
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntlrDenter", "AntlrDenter\AntlrDenter.csproj", "{590BFE38-411D-446B-A2BC-0B25A38D013D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AntlrDenterTest", "AntlrDenterTest\AntlrDenterTest.csproj", "{ED9808B1-63C6-41C0-A0F9-8BFAF8235044}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleCalc", "SimpleCalc\SimpleCalc.csproj", "{0C157FE5-9DFB-40F9-814F-51528DEDBCAC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +21,9 @@ Global
 		{ED9808B1-63C6-41C0-A0F9-8BFAF8235044}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED9808B1-63C6-41C0-A0F9-8BFAF8235044}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED9808B1-63C6-41C0-A0F9-8BFAF8235044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0C157FE5-9DFB-40F9-814F-51528DEDBCAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C157FE5-9DFB-40F9-814F-51528DEDBCAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C157FE5-9DFB-40F9-814F-51528DEDBCAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C157FE5-9DFB-40F9-814F-51528DEDBCAC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

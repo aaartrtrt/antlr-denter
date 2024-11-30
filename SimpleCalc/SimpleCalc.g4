@@ -13,8 +13,8 @@ tokens { INDENT, DEDENT }
       {
           denter = DenterHelper.Builder()
               .Nl(NL)
-              .Indent(SimpleCalcLexer.INDENT)
-              .Dedent(SimpleCalcLexer.DEDENT)
+              .Indent(SimpleCalcParser.INDENT)
+              .Dedent(SimpleCalcParser.DEDENT)
               .PullToken(base.NextToken);
       }
 
