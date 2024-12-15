@@ -2,16 +2,33 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
+
         <Title>AntlrDenter</Title>
-        <Authors>Yannis Paetzelt</Authors>
         <Description>antlr-denter in C#</Description>
-        <RepositoryUrl>https://github.com/yshavit/antlr-denter</RepositoryUrl>
+        <Authors>Yannis Paetzelt;aaartrtrt</Authors>
+        
+        <PackageId>AntlrDenter</PackageId>
+        <Version>0.1.0</Version>
+
+        <RepositoryUrl>https://github.com/aaartrtrt/antlr-denter</RepositoryUrl>
         <RepositoryType>Git</RepositoryType>
+
         <PackageTags>ANTLR, Indentation, Indent</PackageTags>
+        <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
     </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Antlr4.Runtime.Standard" Version="4.13.1" />
+      <None Include="../LICENSE.md" Pack="true" PackagePath=""/>
+      <None Include="../README.md" Pack="true" PackagePath=""/>
     </ItemGroup>
+
+    <PropertyGroup>
+</PropertyGroup>
+
+<ItemGroup>
+</ItemGroup>
+
 
 </Project>
